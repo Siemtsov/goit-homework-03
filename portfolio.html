@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLES -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,16 +12,20 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <title>Portfolio</title>
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="header-nav">
         <a href="./index.html" class="logo link">
           Web<span class="logo-dark">Studio</span>
         </a>
-        <ul class="list">
+        <ul class="list nav-list">
           <li>
             <a href="./index.html" class="link nav-link">Studio</a>
           </li>
@@ -32,7 +37,7 @@
           </li>
         </ul>
       </nav>
-      <address class="address-style">
+      <address class="address-style header-address">
         <ul class="list">
           <li>
             <a href="mailto:info@devstudio.com" class="link address-link">
