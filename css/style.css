@@ -284,14 +284,14 @@ img {
 /* PORTFOLIO */
 /* PANEL */
 .panel-list {
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 24px;
 }
 .panel-btn {
+  border: 1px solid var(--cornflower-color);
   color: var(--iris-color);
   background-color: var(--primary-cloud-color);
   font-family: "Roboto", sans-serif;
@@ -308,6 +308,7 @@ img {
 .panel-btn:active,
 .panel-btn:hover,
 .panel-btn:focus {
+  border: 1px solid transparent;
   cursor: pointer;
   color: var(--primary-white-color);
   background-color: var(--ocean-active);
@@ -315,18 +316,20 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* SERVICE */
+.services-section {
+  padding: 96px 0 120px 0;
+}
 .service-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  row-gap: 48px;
   padding-bottom: 120px;
 }
 .service-list-element {
   background-color: var(--primary-white-color);
-  padding-bottom: 48px;
-
+  width: calc((100% - 48px) / 3);
   border: 1px solid var(--cornflower-color);
 }
 .service-header {
