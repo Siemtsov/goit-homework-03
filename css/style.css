@@ -22,7 +22,7 @@ body {
 }
 .container {
   padding: 0 156px;
-  min-width: 1440px;
+  min-width: 1158px;
 }
 .list {
   list-style: none;
@@ -70,6 +70,7 @@ p {
 /* HEADER */
 .header {
   padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
@@ -212,7 +213,7 @@ p {
 .team-list-element {
   background-color: var(--primary-white-color);
 
-  background: #ffffff;
+  background: var(--primary-white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -248,6 +249,14 @@ p {
 }
 /* PORTFOLIO */
 /* PANEL */
+.panel-list {
+  padding-top: 96px;
+  padding-bottom: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+}
 .panel-btn {
   color: var(--iris-color);
   background-color: var(--primary-cloud-color);
@@ -256,6 +265,11 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
+  padding: 12px 24px;
+
+  border-radius: 4px;
+  border: 0;
 }
 .panel-btn:active,
 .panel-btn:hover,
@@ -263,18 +277,34 @@ p {
   cursor: pointer;
   color: var(--primary-white-color);
   background-color: var(--ocean-active);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* SERVICE */
-.service-container {
+.service-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.service-list-element {
   background-color: var(--primary-white-color);
+  padding-bottom: 48px;
+
+  border: 1px solid var(--cornflower-color);
 }
 .service-header {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 8px;
+  padding-left: 16px;
 }
 .service-caption {
   line-height: 1.5;
   color: var(--primary-slate);
+  padding-left: 16px;
 }
