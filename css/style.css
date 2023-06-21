@@ -91,6 +91,9 @@ img {
   gap: 40px;
   padding: 24px 0;
 }
+.nav-list-element {
+  padding: 24px 0;
+}
 .nav-link {
   font-weight: 500;
   font-size: 16px;
@@ -123,9 +126,9 @@ img {
 /* HERO SECTION */
 .hero-section {
   background-color: var(--primary-navy-blue);
+  padding: 188px 0;
 }
 .hero-container {
-  padding: 188px 0;
 }
 .hero-header {
   color: var(--primary-white-color);
