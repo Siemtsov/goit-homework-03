@@ -52,6 +52,19 @@ p {
 img {
   display: block;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* LOGO */
 .logo {
   text-decoration: none;
@@ -76,6 +89,7 @@ img {
 /* HEADER */
 .header {
   border-bottom: 1px solid #e7e9fc;
+  padding: 24px 0;
 }
 .header-container {
   display: flex;
@@ -89,10 +103,8 @@ img {
 .nav-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 .nav-list-element {
-  padding: 24px 0;
 }
 .nav-link {
   font-weight: 500;
@@ -169,14 +181,16 @@ img {
   background-color: var(--ocean-active);
 }
 /* OPTIONS */
+.options-section {
+  padding: 120px 0;
+}
 .options-list {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
   justify-content: center;
   gap: 24px;
 }
 .options-list-element {
+  width: calc((100% - 72px) / 4);
 }
 .options-caption {
   color: var(--primary-slate);
@@ -197,33 +211,34 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-navy-blue);
+  margin-bottom: 8px;
 }
 /* OUR WORK */
+.our-work-section {
+  padding-bottom: 120px;
+}
 .work-header {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .work-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-
-  padding-bottom: 120px;
 }
 .work-list-element {
 }
 /* OUR TEAM SECCTION */
 .team-section {
   background-color: var(--primary-cloud-color);
+  padding: 120px 0;
 }
 .team-section-header {
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .team-list-element {
   background-color: var(--primary-white-color);
@@ -233,6 +248,9 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+.team-img-caption {
+  padding: 32px 16px;
+}
 .team-header-caption {
   font-weight: 500;
   font-size: 20px;
@@ -240,8 +258,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-navy-blue);
 
-  padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   text-align: center;
 }
 .team-caption {
@@ -252,13 +269,15 @@ img {
 /* FOOTER SECTION */
 .footer-section {
   background-color: var(--primary-navy-blue);
+  padding: 100px 0;
 }
 .footer-container {
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-caption {
-  padding-top: 17.5px;
   width: 264px;
   color: var(--primary-cloud-color);
 }
