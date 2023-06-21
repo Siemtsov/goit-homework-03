@@ -22,7 +22,9 @@ body {
 }
 .container {
   padding: 0 156px;
-  min-width: 1158px;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .list {
   list-style: none;
@@ -47,6 +49,9 @@ p {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+}
 /* LOGO */
 .logo {
   text-decoration: none;
@@ -58,6 +63,7 @@ p {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-right: 76px;
 }
 .logo-dark {
   color: var(--logo-dark-color);
@@ -69,7 +75,6 @@ p {
 }
 /* HEADER */
 .header {
-  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
@@ -80,6 +85,7 @@ p {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding: 24px 0;
 }
 .nav-list {
   display: flex;
