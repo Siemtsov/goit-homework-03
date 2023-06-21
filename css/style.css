@@ -160,6 +160,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   background-color: var(--iris-color);
+  cursor: pointer;
 }
 .hero-btn:focus,
 .hero-btn:active,
